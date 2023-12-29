@@ -1,0 +1,70 @@
+.main > section {
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.main > section > h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-weight: 1200;
+  text-decoration: underline;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main > section > h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main > section > p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  margin-right: 2.5rem;
+  width: 60%;
+}
+
+main > div:nth-child(2) {
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid black;
+  padding-left: 4rem;
+}
+
+main > div img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+@media (max-width: 1260px) {
+  main {
+    flex-direction: column;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  main > div:nth-child(2) {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid black;
+    padding-top: 4rem;
+    max-width: 100%;
+  }
+}

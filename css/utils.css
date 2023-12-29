@@ -1,0 +1,42 @@
+:root {
+  --main-background-color: rgb(228, 228, 228);
+  --second-background-color: rgb(41, 43, 54);
+
+  --heading-color: rgb(44, 44, 44);
+  --hint-color: rgb(151, 151, 151);
+  --font-color: black;
+  --reverse-color: white;
+
+  --heading-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --text-font: Arial, Helvetica, sans-serif;
+
+  --header-height: 7rem;
+  --navigation-height: 5rem;
+  --footer-height: 7rem;
+}
+
+.container {
+  position: relative;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
