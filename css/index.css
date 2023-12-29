@@ -123,13 +123,19 @@ main > section p {
 }
 
 .data-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 2rem;
+}
+
+.data-grid > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
 }
 
 main > section img {
   object-fit: cover;
-  max-width: 50%;
+  max-width: 40%;
   max-height: 80vh;
 }
 
@@ -171,13 +177,6 @@ footer {
     flex-wrap: wrap;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-}
-
-@media (max-width : 460px) {
-  .data-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
   }
 }
 

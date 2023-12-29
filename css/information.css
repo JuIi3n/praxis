@@ -6,13 +6,13 @@ main > section li {
 
 .data-grid {
   margin: 2rem 0 2rem 0;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  gap: 1rem;
 }
 
 main > section h4 {
   color: var(--hint-color);
   font-size: 1.6rem;
+  text-align: center;
 }
 
 @media (max-width : 1360px) {
@@ -50,5 +50,6 @@ main > section h4 {
   .data-grid p {
     height: 4.4rem;
     align-self: flex-end;
+    text-align: end;
   }
 }
