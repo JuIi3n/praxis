@@ -14,6 +14,7 @@ body {
   background: var(--main-background-color);
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 header {
@@ -99,6 +100,7 @@ main {
 
 main > section {
   gap: 5rem;
+  position: relative;
 }
 
 main > section h2 {
@@ -127,7 +129,8 @@ main > section p {
 
 main > section img {
   object-fit: cover;
-  max-width: 100%;
+  max-width: 50%;
+  max-height: 80vh;
 }
 
 footer {
@@ -154,6 +157,10 @@ footer {
   main > section {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  main > section img {
+    max-width: 100%;
   }
 }
 
