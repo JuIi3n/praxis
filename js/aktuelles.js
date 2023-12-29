@@ -1,5 +1,7 @@
 const main = document.querySelector("main");
 
+
+
 async function loadData() {
   try {
     const json_file = await fetch('../aktuelle_daten.json')
